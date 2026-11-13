@@ -58,17 +58,16 @@ public class Dealership {
         return matches;
     }
 
-    public ArrayList<Vehicle> getVehiclesByYear(int min, int Max) {
+    public ArrayList<Vehicle> getVehiclesByYear(int min, int max) {
+        ArrayList<Vehicle> matches = new ArrayList<>();
+        for (Vehicle vehicle : this.inventory) {
+            int vehicleYear = vehicle.getYear();
+            if (vehicleYear <= min && vehicleYear >= max) {
+                matches.add(vehicle);
+            }
+        }
 
-        //loop over inventory and return a list of vehicles that match the year range
-
-        //start a new list for the filtered cars
-
-        //loop over inventory and add matching cards to filtered list
-
-        //return the list
-
-        return null;
+        return matches;
     }
 
     public ArrayList<Vehicle> getVehiclesByColor(String color) {
