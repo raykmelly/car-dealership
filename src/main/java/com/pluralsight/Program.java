@@ -1,9 +1,15 @@
 package com.pluralsight;
 
+import java.util.Scanner;
+
 public class Program {
     public static void main(String[] args) {
-        // Start the user interface of the app
+        Scanner scanner = new Scanner(System.in);
+
+        // Start the app
         UserInterface ui = new UserInterface();
-        ui.display();
+        ui.display(scanner);
+
+        scanner.close();
     }
 }

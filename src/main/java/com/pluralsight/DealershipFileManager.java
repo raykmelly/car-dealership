@@ -5,7 +5,6 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public class DealershipFileManager {
-
     private final String csvFile = "inventory.csv";
 
     // Sets up the Dealership.java class

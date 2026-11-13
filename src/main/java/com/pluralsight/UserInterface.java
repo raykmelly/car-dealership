@@ -12,10 +12,8 @@ public class UserInterface {
 
     }
 
-    public void display(){
+    public void display(Scanner scanner){
         init();
-
-        Scanner scanner = new Scanner(System.in);
 
         boolean appRunning = true;
         while(appRunning){
