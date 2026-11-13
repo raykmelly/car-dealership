@@ -71,42 +71,38 @@ public class Dealership {
     }
 
     public ArrayList<Vehicle> getVehiclesByColor(String color) {
+        ArrayList<Vehicle> matches = new ArrayList<>();
+        for (Vehicle vehicle : this.inventory) {
+            if (vehicle.getColor().equalsIgnoreCase(color)) {
+                matches.add(vehicle);
+            }
+        }
 
-        //loop over inventory and return a list of vehicles that match the make and model
-
-        //start a new list for the filtered cars
-
-        //loop over inventory and add matching cards to filtered list
-
-        //return the list
-
-        return null;
+        return matches;
     }
 
     public ArrayList<Vehicle> getVehiclesByMileage(int min, int max) {
+        ArrayList<Vehicle> matches = new ArrayList<>();
+        for (Vehicle vehicle : this.inventory) {
+            int vehicleMileage = vehicle.getYear();
+            if (vehicleMileage <= min && vehicleMileage >= max) {
+                matches.add(vehicle);
+            }
+        }
 
-        //loop over inventory and return a list of vehicles that match the min and max mileage
-
-        //start a new list for the filtered cars
-
-        //loop over inventory and add matching cards to filtered list
-
-        //return the list
-
-        return null;
+        return matches;
     }
 
     public ArrayList<Vehicle> getVehiclesByType(String type) {
+        ArrayList<Vehicle> matches = new ArrayList<>();
+        for (Vehicle vehicle : this.inventory) {
+            String vehicleType = vehicle.getVehicleType();
+            if (vehicleType.equalsIgnoreCase(type)) {
+                matches.add(vehicle);
+            }
+        }
 
-        //loop over inventory and return a list of vehicles that match the type
-
-        //start a new list for the filtered cars
-
-        //loop over inventory and add matching cards to filtered list
-
-        //return the list
-
-        return null;
+        return matches;
     }
 
 }
