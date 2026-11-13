@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f240c4b-703d-49ce-9677-fc4ccbe07769" name="Changes" comment="Began project and made the getVehiclesByPrice(); and removeVehicle(); methods">
-      <change afterPath="$PROJECT_DIR$/inventory.csv" afterDir="false" />
+    <list default="true" id="9f240c4b-703d-49ce-9677-fc4ccbe07769" name="Changes" comment="Finished the Dealership.java class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Dealership.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Dealership.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DealershipFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DealershipFileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,11 @@
     "last_opened_file_path": "C:/Users/raykm/Pluralsight/Workbook_4/car-dealership"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\raykm\Pluralsight\Workbook_4\car-dealership" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,11 +58,35 @@
       <option name="project" value="LOCAL" />
       <updated>1794598210535</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Made getVehiclesByMakeModel(); method">
+      <created>1794598362973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1794598362973</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Made getVehiclesByYear(); method">
+      <created>1794598519206</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1794598519206</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Finished the Dealership.java class">
+      <created>1794598695943</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1794598695943</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Began project and made the getVehiclesByPrice(); and removeVehicle(); methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Began project and made the getVehiclesByPrice(); and removeVehicle(); methods" />
+    <MESSAGE value="Made getVehiclesByMakeModel(); method" />
+    <MESSAGE value="Made getVehiclesByYear(); method" />
+    <MESSAGE value="Finished the Dealership.java class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished the Dealership.java class" />
   </component>
 </project>

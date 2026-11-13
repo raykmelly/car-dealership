@@ -30,7 +30,6 @@ public class Dealership {
     }
 
     public void removeVehicle(Vehicle vehicle) {
-        //take the vehicle passed in out of the inventory list
         this.inventory.remove(vehicle);
     }
 
