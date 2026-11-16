@@ -4,7 +4,6 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public class Dealership {
-
     private String name;
     private String address;
     private String phone;
@@ -37,7 +36,7 @@ public class Dealership {
         ArrayList<Vehicle> matches = new ArrayList<>();
         for (Vehicle vehicle : this.inventory) {
             BigDecimal vehiclePrice = vehicle.getPrice();
-            if (vehiclePrice.compareTo(min) > 0 || (vehiclePrice.compareTo(max) < 0)) {
+            if (vehiclePrice.compareTo(min) < 0 || (vehiclePrice.compareTo(max) > 0)) {
                 continue;
             }
             matches.add(vehicle);
@@ -61,7 +60,7 @@ public class Dealership {
         ArrayList<Vehicle> matches = new ArrayList<>();
         for (Vehicle vehicle : this.inventory) {
             int vehicleYear = vehicle.getYear();
-            if (vehicleYear <= min && vehicleYear >= max) {
+            if (vehicleYear >= min && vehicleYear <= max) {
                 matches.add(vehicle);
             }
         }

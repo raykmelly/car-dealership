@@ -33,6 +33,7 @@ public class UserInterface {
             System.out.print("-> Enter option: ");
 
             int response = scanner.nextInt();
+            scanner.nextLine();
 
             switch (response) {
                 case 1 -> processGetVehiclesByPrice(scanner);
@@ -42,11 +43,17 @@ public class UserInterface {
                 case 5 -> processGetVehiclesByMileage(scanner);
                 case 6 -> processGetVehiclesByType(scanner);
                 case 7 -> processGetAllVehiclesRequest();
-                case 9 -> processAddVehicle(scanner);
+                case 8 -> processAddVehicle(scanner);
+                case 9 -> processRemoveVehicle(scanner);
                 //case 10 -> processSellOrLeaseVehicle(scanner);
                 case 99 -> appRunning = false;
+                default -> System.out.println("Error: enter a valid option");
             }
         }
+    }
+
+    public void processRemoveVehicle(Scanner scanner) {
+
     }
 
     public void processAddVehicle(Scanner scanner) {
@@ -163,6 +170,8 @@ public class UserInterface {
         // Create the vehicle and add it to the inventory
         Vehicle vehicle = new Vehicle(vin,year,make,model,vehicleType,color,odometer,price);
         dealership.addVehicle(vehicle);
+
+        scanner.nextLine();
     }
 
     // Prompt the user for the vehicle type, the display results
@@ -192,8 +201,8 @@ public class UserInterface {
         System.out.println("\n[Search by mileage]");
 
         // Get input for the min mileage
-        int minMileage = 0;
-        while (minMileage == 0) {
+        int minMileage = -1;
+        while (minMileage == -1) {
             System.out.print("-> Enter the minimum mileage: ");
             try {
                 minMileage = scanner.nextInt();
@@ -203,7 +212,7 @@ public class UserInterface {
             }
         }
 
-        // Get input for the max year
+        // Get input for the max mileage
         int maxMileage = 0;
         while (maxMileage == 0) {
             System.out.print("-> Enter the maximum mileage: ");
@@ -239,8 +248,6 @@ public class UserInterface {
 
         ArrayList<Vehicle> vehicles = dealership.getVehiclesByColor(color);
         displayVehicles(vehicles);
-
-        scanner.nextLine();
     }
 
     // Prompt user for min / max year for vehicle, displays them
@@ -307,8 +314,6 @@ public class UserInterface {
 
         ArrayList<Vehicle> vehicles = dealership.getVehiclesByMakeModel(make,model);
         displayVehicles(vehicles);
-
-        scanner.nextLine();
     }
 
     // Prompts user to get the (min/max) value of a vehicle they want to search
