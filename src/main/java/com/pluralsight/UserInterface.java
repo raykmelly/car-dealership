@@ -53,7 +53,38 @@ public class UserInterface {
     }
 
     public void processRemoveVehicle(Scanner scanner) {
+        System.out.println("\n[Remove a vehicle]");
 
+        // Prompt for vin
+        int vin;
+        while (true) {
+            System.out.print("-> Enter vin number: ");
+            try {
+                vin = scanner.nextInt();
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input: please enter a valid number.");
+                scanner.next(); // Clear the invalid input from the scanner
+            }
+        }
+
+        // Look for vehicle with the vin
+        Vehicle foundVehicle = null;
+        for (Vehicle vehicle : dealership.getAllVehicles()) {
+            if (vehicle.getVin() == vin) {
+                foundVehicle = vehicle;
+            }
+        }
+
+        // Remove vehicle with the vin (if there is any)
+        if (foundVehicle == null) {
+            // No vehicle found with vin
+            System.out.println("\n-> No vehicle found with vin: " + vin);
+        } else{
+            // Remove found vehicle
+            System.out.println("Removing: " + foundVehicle);
+            dealership.removeVehicle(foundVehicle);
+        }
     }
 
     public void processAddVehicle(Scanner scanner) {

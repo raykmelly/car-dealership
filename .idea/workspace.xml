@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f240c4b-703d-49ce-9677-fc4ccbe07769" name="Changes" comment="Bug not allowing my UserInterface.java to work. Debugging">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9f240c4b-703d-49ce-9677-fc4ccbe07769" name="Changes" comment="Started processRemoveVehicle();">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Dealership.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Dealership.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1794605462878</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Started processRemoveVehicle();">
+      <created>1794846960325</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1794846960325</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -144,6 +149,8 @@
     <MESSAGE value="Finished the Dealership.java class" />
     <MESSAGE value="Finished the UserInterface.java class. Finished the saveDealership(); method" />
     <MESSAGE value="Bug not allowing my UserInterface.java to work. Debugging" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug not allowing my UserInterface.java to work. Debugging" />
+    <MESSAGE value="Fixed bugs" />
+    <MESSAGE value="Started processRemoveVehicle();" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started processRemoveVehicle();" />
   </component>
 </project>
